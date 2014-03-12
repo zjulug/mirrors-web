@@ -1,0 +1,71 @@
+.zju-mirrors-header{
+	background-color:#242335;
+	color:#b5b5b5;
+}
+.zju-mirrors-header>div{
+	padding:75px;
+}
+.zju-mirrors-header h1{
+	color:#ffffff;
+	padding:0px 0px 10px 0px;
+	font-size:52px;
+}
+.zju-mirrors-header p{
+	padding:10px 0px 10px 0px;
+	font-size:24px;
+}
+.zju-mirrors-body .block{
+	padding:32px;
+}
+.zju-mirrors-body h1{
+	padding:20px 0px;
+	font-size:35px;
+}
+.zju-mirrors-body p{
+	font-size:18px;
+	line-height:32px;
+}
+.build-helper-text{
+	font-size:18px;
+	padding:5px 0px;
+}
+header a{
+	color:#000;
+}
+header a:hover{
+	color:#000;
+}
+header{
+	font-size:18px;
+}
+header .container{
+	width:1250px;
+}
+.sidebar a{
+	font-size:18px;
+	color:#343350;
+}
+.sidebar ul{
+	padding:32px 8px;
+}
+.navbar li{
+	padding:15px 0px 0px 0px;
+}
+.sel-menu-row{
+	padding:15px 0px;
+}
+.src-list dt{
+	font-size:18px;
+	padding:7px 0px;
+}
+.src-list dd{
+	font-size:18px;
+	padding:7px 0px;
+}
+.zju-mirrors-footer{
+	background-color:#242335;
+	color:#DDD;
+	font-size:18px;
+	padding:7px 0px;
+	text-align:center;
+}

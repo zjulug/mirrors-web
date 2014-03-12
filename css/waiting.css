@@ -1,0 +1,15 @@
+#layer6,#layer7,#layer8{position:absolute;left:0px;top:0px;}
+.anim_8{-webkit-animation-duration: 1.5s;-webkit-animation-iteration-count:infinite;-webkit-transform-origin:25px 25px;-webkit-animation-name:animation_6;-webkit-animation-timing-function: linear;-moz-animation-timing-function: linear; -moz-animation-duration: 1.5s; -moz-animation-name: animation_6;  -moz-transform-origin:25px 25px; -moz-animation-iteration-count:infinite ;-o-animation-timing-function: linear; -o-animation-duration: 1.5s; -o-animation-name: animation_6;  -o-transform-origin:25px 25px; -o-animation-iteration-count:infinite ;}
+@-webkit-keyframes animation_6{
+	0%{ -webkit-transform:  rotate(0deg)  ;}     
+	100%{ -webkit-transform:  rotate(360deg)  ;} 
+}
+@-o-keyframes animation_6{
+	0%{ -o-transform:  rotate(0deg)  ;}     
+	100%{ -o-transform:  rotate(360deg)  ;} 
+}
+
+@-moz-keyframes animation_6{
+	0%{ -moz-transform:  rotate(0deg)  ;}     
+	100%{ -moz-transform:  rotate(360deg)  ;} 
+}
