@@ -60,7 +60,7 @@ var dist;
 var version;
 function loadSettings(e){
 	e.preventDefault();
-	$(".version-val").text(e.target.outerText);
+	$(".version-val").text(e.target.innerHTML);
 
 	dist=$(".dist-val").text();
 	version=versionObj[dist][$(".version-val").text()];
@@ -71,14 +71,15 @@ function loadSettings(e){
 function loadMenuItems(e)
 {
 	e.preventDefault();
-	$(".dist-val").text(e.target.outerText);
+	$(".dist-val").text(e.target.innerHTML);
 	$(".version-menu").empty();
 	$(".version-val").text("请选择版本");
 	$(".build-btn").hide(0);
 	$(".build-result").hide(0);
 
-	for(obj in versionObj[e.target.outerText]){
+	for(var obj in versionObj[e.target.innerHTML]){
 		$(".version-menu").append($("<li><a href='#'>"+obj+"</a></li>"));
+		console.log (obj);
 	}
 
 	$(".version-menu a").click(loadSettings);
