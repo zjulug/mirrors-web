@@ -1,149 +1,143 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>浙江大学开源镜像站</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<meta charset="utf8" />
-		<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
-		<link rel="stylesheet" href="./css/main.css" type="text/css">
-		<link rel="stylesheet" href="./css/waiting.css" type="text/css">
-	</head>
+<head>
+<title>浙江大学开源镜像站</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="utf8" />
+<link rel="stylesheet" href="all.min.css" type="text/css">
+</head>
 
-	<body>
-		<header class="navbar" role="banner">
-			<div class="container">
-				<nav class="" role="navigation">
-					<ul class="nav navbar-nav">
-						<li>
-						<a href="#list">源列表</a>
-						</li>
-						<li>
-						<a href="#generator">配置生成器</a>
-						</li>
-						<li>
-						<a href="#image-list">安装镜像目录</a>
-						</li>
-					</ul>
-				</nav>
+<body>
+<header class="navbar" role="banner">
+	<div class="container">
+		<nav class="" role="navigation">
+			<ul class="nav navbar-nav">
+				<li>
+				<a href="#list">源列表</a>
+				</li>
+				<li>
+				<a href="#generator">配置生成器</a>
+				</li>
+				<li>
+				<a href="#image-list">安装镜像目录</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="zju-mirrors-header">
+	<div class="container">
+		<h1>浙江大学开源镜像站</h1>
+		<p>浙江大学开源镜像站是一个以普及开源软件，方便浙江省内的用户高效访问开源项目的各种资源的非盈利计划。</p>
+		<p>该镜像站提供了包括 Arch Linux , CentOS , CPAN , CTAN , Cygwin , Debian , Deepin , EPEL , Fedora , Linux Mint , openSUSE , Ubuntu 等项目源的镜像，以服务于教育和科学研究为目的，提倡自由、平等、协作、共享的精神。</p>
+	</div>
+</div>
+
+<div class="container zju-mirrors-body">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row block src-list" id="list">
+				<h1>源列表</h1>
+				<dl class="dl-horizontal">
+					<dt><a href="/archlinux">Arch Linux</a></dt>
+					<dd>A simple, lightweight Linux distribution.</dd>
+					<dt><a href="/centos">CentOS</a></dt>
+					<dd>An Enterprise-class Linux Distribution "derived from sources freely provided to the public by Red Hat</dd>
+					<dt><a href="/cygwin">Cygwin</a></dt>
+					<dd>Red Hat's "community project" tool to migrating applications from UNIX/Linux to the Microsoft Windows platform</dd>
+					<dt><a href="/CPAN">CPAN</a></dt>
+					<dd>The Comprehensive Perl Archive Network</dd>
+					<dt><a href="/CTAN">CTAN</a></dt>
+					<dd>The Comprehensive TeX Archive Network</dd>
+					<dt><a href="/debian">Debian</a></dt>
+					<dd>The Debian Linux distribution</dd>
+					<dt><a href="/deepin">Deepin</a></dt>
+					<dd>Fast and stylishly simple linux distribution by Wuhan Deepin Technology</dd>
+					<dt><a href="/epel">EPEL</a></dt>
+					<dd>Extra Packages for Enterprise Linux is a Fedora Special Interest Group that creates, maintains, and manages a set of additional packages for Enterprise Linux</dd>
+					<dt><a href="/fedora">Fedora</a></dt>
+					<dd>Red Hat's "community project" Linux distribution</dd>
+					<dt><a href="/linuxmint">Linux Mint</a></dt>
+					<dd>Linux Mint is aimed to produce a modern, elegant and comfortable operating system</dd>
+					<dt><a href="/opensuse">openSUSE</a></dt>
+					<dd>Novell's "community project" Linux distribution</dd>
+					<dt><a href="/ubuntu">Ubuntu</a></dt>
+					<dd>Ubuntu is a Linux distribution from Canonical</dd>
+				</dl>
 			</div>
-		</header>
-
-		<div class="zju-mirrors-header">
-			<div class="container">
-				<h1>浙江大学开源镜像站</h1>
-				<p>浙江大学开源镜像站是一个以普及开源软件，方便浙江省内的用户高效访问开源项目的各种资源的非盈利计划。</p>
-				<p>该镜像站提供了包括Arch Linux, CentOS, CPAN, CTAN, Cygwin, Debian, Deepin, EPEL, Fedora, LinuxMint, openSuSE, Ubuntu等项目源的镜像，以服务于教育和科学研究为目的，提倡自由、平等、协作、共享的精神。</p>
-			</div>
-		</div>
-
-		<div class="container zju-mirrors-body">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="row block src-list" id="list">
-						<h1>源列表</h1>
-						<dl class="dl-horizontal">
-							<dt><a href="/archlinux">Arch Linux</a></dt>
-							<dd>Arch Linux, A simple, lightweight Linux distribution.</dd>
-							<dt><a href="/centos">CentOS</a></dt>
-							<dd>CentOS, an Enterprise-class Linux Distribution "derived from sources freely provided to the public by Red Hat</dd>
-							<dt><a href="/cygwin">Cygwin</a></dt>
-							<dd>Cygwin, Red Hat's "community project" tool to migrating applications from UNIX/Linux to the Microsoft Windows platform</dd>
-							<dt><a href="/CPAN">CPAN</a></dt>
-							<dd>The Comprehensive Perl Archive Network</dd>
-							<dt><a href="/CTAN">CTAN</a></dt>
-							<dd>The Comprehensive TeX Archive Network</dd>
-							<dt><a href="/debian">Debian</a></dt>
-							<dd>The Debian Linux distribution</dd>
-							<dt><a href="/deepin">Deepin</a></dt>
-							<dd>Fast and stylishly simple linux distribution by Wuhan Deepin Technology</dd>
-							<dt><a href="/epel">EPEL</a></dt>
-							<dd>Extra Packages for Enterprise Linux is a Fedora Special Interest Group that creates, maintains, and manages a set of additional packages for Enterprise Linux</dd>
-							<dt><a href="/fedora">Fedora</a></dt>
-							<dd>Fedora, Red Hat's "community project" Linux distribution</dd>
-							<dt><a href="/linuxmint">Linux Mint</a></dt>
-							<dd>Linux Mint is aimed to produce a modern, elegant and comfortable operating system</dd>
-							<dt><a href="/opensuse">openSuSE</a></dt>
-							<dd>openSUSE, Novell's "community project" Linux distribution</dd>
-							<dt><a href="/ubuntu">Ubuntu</a> (<a href="/ubuntu-releases/">releases</a>)</dt>
-							<dd>Ubuntu is a Linux distribution from Canonical</dd>
-						</dl>
+			<div class="row block" id="generator">
+				<h1>配置生成器</h1>
+				<p>为了方便用户部署所需要的发行版，浙江大学开源镜像站提供了自动化的用户配置生成工具。请在下拉框中选择你的发行版和版本，我们会为你生成量身定制的配置说明和配置文件</p>
+				<div class="row sel-menu-row">
+					<div class="btn-group col-md-3">
+						<button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown">
+							<span class="dist-val">请选择发行版</span> <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dist-selector col-md-12" role="menu">
+							<li><a href="#">Ubuntu</a></li>
+							<li><a href="#">Fedora</a></li>
+							<li><a href="#">CentOS</a></li>
+							<li><a href="#">Debian</a></li>
+							<li><a href="#">ArchLinux</a></li>
+							<li><a href="#">LinuxMint</a></li>
+							<li><a href="#">Deepin</a></li>
+							<li><a href="#">openSUSE</a></li>
+						</ul>
 					</div>
-					<div class="row block" id="generator">
-						<h1>配置生成器</h1>
-						<p>为了方便用户部署所需要的发行版，浙江大学开源镜像站提供了自动化的用户配置生成工具。请在下拉框中选择你的发行版和版本，我们会为你生成量身定制的配置说明和配置文件</p>
-						<div class="row sel-menu-row">
-							<div class="btn-group col-md-3">
-								<button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown">
-									<span class="dist-val">请选择发行版</span> <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu dist-selector col-md-12" role="menu">
-									<li><a href="#">Ubuntu</a></li>
-									<li><a href="#">Fedora</a></li>
-									<li><a href="#">CentOS</a></li>
-									<li><a href="#">Debian</a></li>
-									<li><a href="#">ArchLinux</a></li>
-									<li><a href="#">LinuxMint</a></li>
-									<li><a href="#">Deepin</a></li>
-									<li><a href="#">openSuSE</a></li>
-								</ul>
-							</div>
-							<div class="btn-group col-md-3">
-								<button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown">
-									<span class="version-val">请选择版本</span> <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu version-menu col-md-12" role="menu">
-								<li><a href="#">请先选择发行版</a></li>
-								</ul>
-							</div>
-							<button type="button" class="btn btn-success col-md-4 build-btn">
-								<span>开始生成</span>
-							</button>
-						</div>
-						<div class="build-result">
-							<div class="build-helper-text">
-							</div>
-							<pre class="build-code-text">
-							</pre>
-						</div>
-						<div class="col-md-offset-6 col-md-1 col-xs-offset-6 col-xs-1">
-							<div class="auto_scaling waiting">
-											<canvas id="layer6" width="50" height="50" class="anim_6"> </canvas> <canvas id="layer8" width="50" height="50" class="anim_8"></canvas>				<canvas id="layer7" width="50" height="50" class="anim_7"></canvas> 
-							</div>
-						</div>
+					<div class="btn-group col-md-3">
+						<button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown">
+							<span class="version-val">请选择版本</span> <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu version-menu col-md-12" role="menu">
+							<li><a href="#">请先选择发行版</a></li>
+						</ul>
 					</div>
-					<div class="row block src-list" id="image-list">
-						<h1>安装镜像目录</h1>
-						<p>为了方便用户下载常见发行版的镜像，浙江大学开源镜像站提供了常见发行版安装镜像目录的整理，如下</p>
-						<dl class="dl-horizontal">
-							<dt><a href="/archlinux/iso/">Arch Linux</a></dt>
-							<dd>Arch Linux, A simple, lightweight Linux distribution.</dd>
-							<dt><a href="/centos">CentOS</a></dt>
-							<dd>CentOS, an Enterprise-class Linux Distribution "derived from sources freely provided to the public by Red Hat</dd>
-							<dt><a href="/debian-cd/current/">Debian</a></dt>
-							<dd>The Debian Linux distribution</dd>
-							<dt><a href="/deepin-cd/releases/">Deepin</a></dt>
-							<dd>Fast and stylishly simple linux distribution by Wuhan Deepin Technology</dd>
-							<dt><a href="/fedora/releases/">Fedora</a></dt>
-							<dd>Fedora, Red Hat's "community project" Linux distribution</dd>
-							<dt><a href="/opensuse/distribution">openSuSE</a></dt>
-							<dd>openSUSE, Novell's "community project" Linux distribution</dd>
-							<dt><a href="/ubuntu-releases">Ubuntu</a></dt>
-							<dd>Ubuntu is a Linux distribution from Canonical</dd>
-						</dl>
+					<button type="button" class="btn btn-success col-md-4 build-btn">
+						<span>开始生成</span>
+					</button>
+				</div>
+				<div class="build-result">
+					<div class="build-helper-text">
+					</div>
+					<pre class="build-code-text">
+					</pre>
+				</div>
+				<div class="col-md-offset-6 col-md-1 col-xs-offset-6 col-xs-1">
+					<div class="auto_scaling waiting">
+						<canvas id="layer6" width="50" height="50" class="anim_6"> </canvas> <canvas id="layer8" width="50" height="50" class="anim_8"></canvas>				<canvas id="layer7" width="50" height="50" class="anim_7"></canvas> 
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="zju-mirrors-footer">
-			<div class="container">
-				<p>This site is operated by zjulug, thanks to Zhejiang University Library and Information Center</p>
+			<div class="row block src-list" id="image-list">
+				<h1>安装镜像目录</h1>
+				<p>为了方便用户下载常见发行版的镜像，浙江大学开源镜像站提供了常见发行版安装镜像目录的整理，如下</p>
+				<dl class="dl-horizontal">
+					<dt><a href="/archlinux/iso/">Arch Linux</a></dt>
+					<dd>A simple, lightweight Linux distribution.</dd>
+					<dt><a href="/centos">CentOS</a></dt>
+					<dd>An Enterprise-class Linux Distribution "derived from sources freely provided to the public by Red Hat</dd>
+					<dt><a href="/debian-cd/current/">Debian</a></dt>
+					<dd>The Debian Linux distribution</dd>
+					<dt><a href="/deepin-cd/releases/">Deepin</a></dt>
+					<dd>Fast and stylishly simple linux distribution by Wuhan Deepin Technology</dd>
+					<dt><a href="/fedora/releases/">Fedora</a></dt>
+					<dd>Red Hat's "community project" Linux distribution</dd>
+					<dt><a href="/opensuse/distribution">openSUSE</a></dt>
+					<dd>Novell's "community project" Linux distribution</dd>
+					<dt><a href="/ubuntu-releases">Ubuntu</a></dt>
+					<dd>Ubuntu is a Linux distribution from Canonical</dd>
+				</dl>
 			</div>
 		</div>
-		<script src="./js/jquery.min.js" type="text/javascript"></script>
-		<script src="./js/waiting.js" type="text/javascript"></script>
-		<script src="./js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="./js/maker.js" type="text/javascript"></script>
-		<script src="./js/helper.js" type="text/javascript"></script>
-		<script src="./js/main.js" type="text/javascript"></script>
-	</body>
+	</div>
+</div>
+<div class="zju-mirrors-footer">
+	<div class="container">
+		<p>This site is operated by LUG@ZJU. Thanks to Zhejiang University Library and Information Center.</p>
+		<p><small><a href="https://github.com/zjulug/mirrors-web">GitHub repository</a></small></p>
+	</div>
+</div>
+<script src="all.min.js" type="text/javascript"></script>
+</body>
 </html>
