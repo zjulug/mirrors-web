@@ -69,3 +69,7 @@ header .container{
 	padding:7px 0px;
 	text-align:center;
 }
+body{
+	overflow-x:hidden;
+	width:100%;
+}
