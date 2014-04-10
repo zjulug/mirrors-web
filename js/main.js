@@ -49,7 +49,7 @@ versionObj.LinuxMint={
 versionObj.Deepin={
 	"12.06":"precise"
 };
-versionObj.OpenSuSE={
+versionObj.openSUSE={
 	"11.4":"11.4",
 	"12.3":"12.3",
 	"13.1":"13.1"
