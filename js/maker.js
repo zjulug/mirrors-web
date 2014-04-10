@@ -16,6 +16,19 @@ build.ubuntu = function(release) {
   return ubuntu.block("deb", release) + ubuntu.block("deb-src", release);
 };
 
+raspbian = {};
+
+raspbian.line = function(val, flag, release) {
+  return "" + val + " http://mirrors.zju.edu.cn/raspbian/raspbian/" + " " + release + " main contrib non-free rpi\n";
+};
+
+raspbian.block = function(val, release) {
+  return raspbian.line(val, '/', release);
+};
+
+build.raspbian= function(release) {
+  return raspbian.block("deb", release) + raspbian.block("deb-src", release);
+};
 debian = {};
 
 debian.line = function(val, flag, release) {

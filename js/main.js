@@ -54,6 +54,9 @@ versionObj.OpenSuSE={
 	"12.3":"12.3",
 	"13.1":"13.1"
 };
+versionObj.Raspbian={
+	"7 (Wheezy)":"wheezy"
+};
 
 
 var dist;
