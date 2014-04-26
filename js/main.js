@@ -24,7 +24,8 @@ versionObj.Ubuntu={
 	"10.04":"lucid",
 	"12.04":"precise",
 	"13.04":"raring",
-	"13.10":"saucy"
+	"13.10":"saucy",
+	"14.04":"trusty"
 };
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
