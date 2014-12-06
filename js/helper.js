@@ -1,7 +1,7 @@
 if(builder==null)
 	builder={};
 textDebianLike="请将/etc/apt/sources.list替换为下述内容";
-textCentLike="请删除/etc/yum.repos.d/fedora.repo和/etc/yum.repos.d/fedora-updates.repo，然后在/etc/yum.repo.d目录中建立fedora.repo文件，并填入下列内容"
+textCentLike="请删除/etc/yum.repos.d/fedora.repo和/etc/yum.repos.d/fedora-updates.repo，然后在/etc/yum.repos.d目录中建立fedora.repo文件，并填入下列内容"
 textCent="请删除/etc/yum.repos.d中的所有文件，然后在/etc/yum.repos.d目录中建立CentOS.repo文件，并填入下列内容"
 textArch="请将/etc/pacman.d/mirrorlist替换为以下内容"
 
