@@ -87,7 +87,6 @@ function loadMenuItems(e)
 
 	for(var obj in versionObj[e.target.innerHTML]){
 		$(".version-menu").append($("<li><a href='#'>"+obj+"</a></li>"));
-		console.log (obj);
 	}
 
 	$(".version-menu a").click(loadSettings);
@@ -109,8 +108,8 @@ function resCalc(e){
 	$(".waiting").fadeIn(100);
 	setTimeout(function(){
 		$(".waiting").fadeOut(100);
-	},700);
-	setTimeout(doCalc,900);
+	},300);
+	setTimeout(doCalc,500);
 }
 
 $(".dist-selector a").click(loadMenuItems);
