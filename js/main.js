@@ -25,7 +25,8 @@ versionObj.Ubuntu={
 	"12.04":"precise",
 	"13.04":"raring",
 	"13.10":"saucy",
-	"14.04":"trusty"
+	"14.04":"trusty",
+	"14.10":"utopic"
 };
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
@@ -36,16 +37,19 @@ versionObj.ArchLinux={
 };
 versionObj.Fedora={
 	"19 (Schrödinger's Cat)":"Schrödinger's Cat",
-	"20 (Heisenbug)":"Heisenbug"
+	"20 (Heisenbug)":"Heisenbug",
+	"21 (Twentyone)":"Twentyone"
 };
 versionObj.CentOS={
 	"5":"5",
-	"6":"6"
+	"6":"6",
+	"7":"7"
 };
 versionObj.LinuxMint={
 	"13 Maya":"maya",
 	"14 Nadia":"nadia",
-	"16 Petra":"petra"
+	"16 Petra":"petra",
+	"17 Rebecca":"rebecca"
 };
 versionObj.Deepin={
 	"12.06":"precise"
