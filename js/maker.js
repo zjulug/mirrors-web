@@ -64,7 +64,7 @@ centos.singleBlock = function(name, url, version) {
 };
 
 build.centos = function(release) {
-  return centos.singleBlock('base', 'os', release) + centos.singleBlock('updates', 'updates', release) + centos.singleBlock('extras', 'extras', release) + centos.singleBlock('centosplus', 'centosplus', release) + centos.singleBlock('contrib', 'contrib', release);
+  return centos.singleBlock('base', 'os', release) + centos.singleBlock('updates', 'updates', release) + centos.singleBlock('extras', 'extras', release);
 };
 
 epel = {};
