@@ -109,8 +109,8 @@ function resCalc(e){
 	$(".waiting").fadeIn(100);
 	setTimeout(function(){
 		$(".waiting").fadeOut(100);
-	},300);
-	setTimeout(doCalc,500);
+	},100);
+	setTimeout(doCalc,300);
 }
 
 $(".dist-selector a").click(loadMenuItems);
