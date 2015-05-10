@@ -30,7 +30,8 @@ versionObj.Ubuntu={
 };
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
-	"7 (Wheezy)":"wheezy"
+	"7 (Wheezy)":"wheezy",
+	"8 (Jessie)":"jessie"
 };
 versionObj.ArchLinux={
 	"All Versions":"all"
