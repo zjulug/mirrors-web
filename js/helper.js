@@ -6,7 +6,7 @@ textCent="请删除/etc/yum.repos.d中的所有文件，然后在/etc/yum.repos.
 textArch="请将/etc/pacman.d/mirrorlist替换为以下内容"
 
 builder.getHelperText=function(dist,version){
-	if(dist=="Ubuntu"||dist=="Debian"||dist=="Deepin"){
+	if(dist=="Ubuntu"||dist=="Debian"||dist=="Deepin"||dist=="Raspbian"){
 		return textDebianLike;
 	}else if(dist=='Fedora'){
 		return textCentLike;
