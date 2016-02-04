@@ -10,23 +10,21 @@ function getInternetExplorerVersion()
 	}
 	return rv;
 }
-//From MSDN!!!
 function checkVersion()
 {
 	ver = getInternetExplorerVersion();
 	if ( ver > -1 )
 		if ( ver <= 10.0 ) 
-			alert("You're using a ancient copy of Internet Explorer. Please upgrade it to IE 11 or newer version!");
+			alert("You're using a ancient copy of Internet Explorer.");
 }
 checkVersion();
 versionObj={}
 versionObj.Ubuntu={
-	"10.04":"lucid",
 	"12.04":"precise",
-	"13.04":"raring",
-	"13.10":"saucy",
 	"14.04":"trusty",
-	"14.10":"utopic"
+	"14.10":"utopic",
+	"15.04":"vivid",
+	"15.10":"wily"
 };
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
@@ -37,9 +35,8 @@ versionObj.ArchLinux={
 	"All Versions":"all"
 };
 versionObj.Fedora={
-	"19 (Schrödinger's Cat)":"Schrödinger's Cat",
-	"20 (Heisenbug)":"Heisenbug",
-	"21 (Twentyone)":"Twentyone"
+	"22 (TwentyTwo)": "TwentyTwo",
+	"23 (TwentyThree)": "TwentyThree"
 };
 versionObj.CentOS={
 	"5":"5",
@@ -48,20 +45,29 @@ versionObj.CentOS={
 };
 versionObj.LinuxMint={
 	"13 Maya":"maya",
-	"14 Nadia":"nadia",
-	"16 Petra":"petra",
-	"17 Rebecca":"rebecca"
+	"17 Qiana":"qiana",
+	"17.1 Rebecca": "rebecca",
+	"17.2 Rafaela": "rafaela",
+	"17.3 Rosa": "rosa"
 };
+/*
+ * We stoped support for Deepin generator because
+ * Deepin use a version number different from underlying
+ * codename, which seems to make the upgraded deepin system
+ * and original deepin system has different codename and
+ * repos.
+ *
 versionObj.Deepin={
 	"12.06":"precise"
-};
+};*/
 versionObj.openSUSE={
-	"11.4":"11.4",
-	"12.3":"12.3",
-	"13.1":"13.1"
+	"13.1":"13.1",
+	"13.2":"13.2",
+	"Leap 42.1":"Leap"
 };
 versionObj.Raspbian={
-	"7 (Wheezy)":"wheezy"
+	"7 (Wheezy)":"wheezy",
+	"8 (Jessie)":"jessie"
 };
 
 
@@ -92,7 +98,7 @@ function loadMenuItems(e)
 
 	$(".version-menu a").click(loadSettings);
 }
-function doCalc()
+function generateConfig()
 {
 	$(".build-helper-text").text(builder.getHelperText(dist,version));
 	var ctxt=builder.getCodeText(dist,version);
@@ -104,18 +110,18 @@ function doCalc()
 	}
 	$(".build-result").show(500);
 }
-function resCalc(e){
+function delayedConfig(e){
 	e.preventDefault();
 	$(".waiting").fadeIn(100);
 	setTimeout(function(){
 		$(".waiting").fadeOut(100);
 	},100);
-	setTimeout(doCalc,300);
+	setTimeout(generateConfig,300);
 }
 
 $(".dist-selector a").click(loadMenuItems);
 $(".build-btn").hide(0);
 $(".build-result").hide(0);
 
-$(".build-btn").click(resCalc);
+$(".build-btn").click(delayedConfig);
 $(".waiting").fadeOut(0);
