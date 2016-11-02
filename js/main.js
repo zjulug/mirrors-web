@@ -22,9 +22,8 @@ versionObj={}
 versionObj.Ubuntu={
 	"12.04":"precise",
 	"14.04":"trusty",
-	"14.10":"utopic",
-	"15.04":"vivid",
-	"15.10":"wily"
+	"16.04":"xenial",
+	"16.10":"yakkety"
 };
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
@@ -36,7 +35,8 @@ versionObj.ArchLinux={
 };
 versionObj.Fedora={
 	"22 (TwentyTwo)": "TwentyTwo",
-	"23 (TwentyThree)": "TwentyThree"
+	"23 (TwentyThree)": "TwentyThree",
+	"24 (TwentyFour)": "TwentyFour"
 };
 versionObj.CentOS={
 	"5":"5",
@@ -44,11 +44,12 @@ versionObj.CentOS={
 	"7":"7"
 };
 versionObj.LinuxMint={
-	"13 Maya":"maya",
 	"17 Qiana":"qiana",
 	"17.1 Rebecca": "rebecca",
 	"17.2 Rafaela": "rafaela",
-	"17.3 Rosa": "rosa"
+	"17.3 Rosa": "rosa",
+	"18 Sarah": "sarah",
+	"18.1 Serena": "serena"
 };
 /*
  * We stoped support for Deepin generator because
