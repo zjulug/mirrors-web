@@ -36,7 +36,7 @@ debian.line = function(val, flag, release) {
 };
 
 debian.block = function(val, release) {
-  return debian.line(val, '/', release) + debian.line(val, '/', "" + release + "-proposed-updates") + debian.line(val, '-security/', "" + release + "/updates") + debian.line(val, '-multimedia/', "" + release + "-backports");
+  return debian.line(val, '/', release) + debian.line(val, '/', "" + release + "-updates") + debian.line(val, '-security/', "" + release + "/updates");
 };
 
 build.debian = function(release) {
@@ -64,7 +64,7 @@ centos.singleBlock = function(name, url, version) {
 };
 
 build.centos = function(release) {
-  return centos.singleBlock('base', 'os', release) + centos.singleBlock('updates', 'updates', release) + centos.singleBlock('extras', 'extras', release) + centos.singleBlock('centosplus', 'centosplus', release) + centos.singleBlock('contrib', 'contrib', release);
+  return centos.singleBlock('base', 'os', release) + centos.singleBlock('updates', 'updates', release) + centos.singleBlock('extras', 'extras', release);
 };
 
 epel = {};
