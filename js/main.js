@@ -23,7 +23,9 @@ versionObj.Ubuntu={
 	"12.04":"precise",
 	"14.04":"trusty",
 	"16.04":"xenial",
-	"16.10":"yakkety"
+	"16.10":"yakkety",
+	"18.04":"bionic",
+	"18.10":"cosmic"
 };
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
