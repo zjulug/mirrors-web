@@ -28,7 +28,8 @@ versionObj.Ubuntu={
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
 	"7 (Wheezy)":"wheezy",
-	"8 (Jessie)":"jessie"
+	"8 (Jessie)":"jessie",
+	"9 (Stretch)":"stretch"
 };
 versionObj.ArchLinux={
 	"All Versions":"all"
@@ -68,7 +69,8 @@ versionObj.openSUSE={
 };
 versionObj.Raspbian={
 	"7 (Wheezy)":"wheezy",
-	"8 (Jessie)":"jessie"
+	"8 (Jessie)":"jessie",
+	"9 (Stretch)":"stretch"
 };
 
 
