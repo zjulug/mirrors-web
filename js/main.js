@@ -35,9 +35,8 @@ versionObj.ArchLinux={
 	"All Versions":"all",
 };
 versionObj.Fedora={
-	"22 (TwentyTwo)": "TwentyTwo",
-	"23 (TwentyThree)": "TwentyThree",
-	"24 (TwentyFour)": "TwentyFour",
+	"27 (TwentySeven)": "TwentySeven",
+	"28 (TwentyEight)": "TwentyEight"
 };
 versionObj.CentOS={
 	"6":"6",
