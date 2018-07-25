@@ -40,7 +40,6 @@ versionObj.Fedora={
 	"24 (TwentyFour)": "TwentyFour",
 };
 versionObj.CentOS={
-	"5":"5",
 	"6":"6",
 	"7":"7",
 };
@@ -51,6 +50,9 @@ versionObj.LinuxMint={
 	"17.3 Rosa": "rosa",
 	"18 Sarah": "sarah",
 	"18.1 Serena": "serena",
+	"18.2 Sonya": "sonya",
+	"18.3 Sylvia": "sylvia",
+	"19 Tara": "tara"
 };
 /*
  * We stoped support for Deepin generator because
