@@ -38,9 +38,16 @@ debian.line = function(val, flag, release) {
 debian.block = function(val, release) {
   return debian.line(val, '/', release) + debian.line(val, '/', "" + release + "-updates") + debian.line(val, '-security/', "" + release + "/updates");
 };
+debian_rolling.block = function(val, release) {
+  return debian.line(val, '/', release);
+};
 
 build.debian = function(release) {
-  return debian.block("deb", release) + debian.block("deb-src", release);
+  if(release != "testing" && release != "sid"){
+    return debian.block("deb", release) + debian.block("deb-src", release);
+  }else{
+    return debian_rolling.block("deb", release);
+  }
 };
 
 deepin = {};
