@@ -29,7 +29,7 @@ versionObj.Ubuntu={
 versionObj.Debian={
 	"7 (Wheezy)":"wheezy",
 	"8 (Jessie)":"jessie",
-	"9 (Stretch)":"stretch"
+	"9 (Stretch)":"stretch",
 	"Next Stable (testing)": "testing",
 	"Sid": "sid"
 };
