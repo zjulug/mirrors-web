@@ -55,16 +55,6 @@ versionObj.LinuxMint={
 	"18.3 Sylvia": "sylvia",
 	"19 Tara": "tara"
 };
-/*
- * We stoped support for Deepin generator because
- * Deepin use a version number different from underlying
- * codename, which seems to make the upgraded deepin system
- * and original deepin system has different codename and
- * repos.
- *
-versionObj.Deepin={
-	"12.06":"precise"
-};*/
 versionObj.openSUSE={
 	"15.0":"15.0",
 	"Leap 42.3":"Leap"
