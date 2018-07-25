@@ -23,15 +23,13 @@ versionObj.Ubuntu={
 	"12.04":"precise",
 	"14.04":"trusty",
 	"16.04":"xenial",
-	"17.04":"yakkety",
 	"17.10":"artful",
-	"18.04":"bionic",
+	"18.04":"bionic"
 };
 versionObj.Debian={
-	"6 (Squeeze)":"squeeze",
 	"7 (Wheezy)":"wheezy",
 	"8 (Jessie)":"jessie",
-	"9 (Stretch)":"stretch",
+	"9 (Stretch)":"stretch"
 };
 versionObj.ArchLinux={
 	"All Versions":"all",
