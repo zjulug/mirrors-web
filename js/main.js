@@ -14,7 +14,7 @@ function checkVersion()
 {
 	ver = getInternetExplorerVersion();
 	if ( ver > -1 )
-		if ( ver <= 10.0 ) 
+		if ( ver <= 10.0 )
 			alert("You're using a ancient copy of Internet Explorer.");
 }
 checkVersion();
@@ -23,25 +23,28 @@ versionObj.Ubuntu={
 	"12.04":"precise",
 	"14.04":"trusty",
 	"16.04":"xenial",
-	"16.10":"yakkety"
+	"17.04":"yakkety",
+	"17.10":"artful",
+	"18.04":"bionic",
 };
 versionObj.Debian={
 	"6 (Squeeze)":"squeeze",
 	"7 (Wheezy)":"wheezy",
-	"8 (Jessie)":"jessie"
+	"8 (Jessie)":"jessie",
+	"9 (Stretch)":"stretch",
 };
 versionObj.ArchLinux={
-	"All Versions":"all"
+	"All Versions":"all",
 };
 versionObj.Fedora={
 	"22 (TwentyTwo)": "TwentyTwo",
 	"23 (TwentyThree)": "TwentyThree",
-	"24 (TwentyFour)": "TwentyFour"
+	"24 (TwentyFour)": "TwentyFour",
 };
 versionObj.CentOS={
 	"5":"5",
 	"6":"6",
-	"7":"7"
+	"7":"7",
 };
 versionObj.LinuxMint={
 	"17 Qiana":"qiana",
@@ -49,7 +52,7 @@ versionObj.LinuxMint={
 	"17.2 Rafaela": "rafaela",
 	"17.3 Rosa": "rosa",
 	"18 Sarah": "sarah",
-	"18.1 Serena": "serena"
+	"18.1 Serena": "serena",
 };
 /*
  * We stoped support for Deepin generator because
@@ -68,7 +71,8 @@ versionObj.openSUSE={
 };
 versionObj.Raspbian={
 	"7 (Wheezy)":"wheezy",
-	"8 (Jessie)":"jessie"
+	"8 (Jessie)":"jessie",
+	"9 (Stretch)":"stretch",
 };
 
 
