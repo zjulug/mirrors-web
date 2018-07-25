@@ -64,9 +64,8 @@ versionObj.Deepin={
 	"12.06":"precise"
 };*/
 versionObj.openSUSE={
-	"13.1":"13.1",
-	"13.2":"13.2",
-	"Leap 42.1":"Leap"
+	"15.0":"15.0",
+	"Leap 42.3":"Leap"
 };
 versionObj.Raspbian={
 	"7 (Wheezy)":"wheezy",
